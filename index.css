@@ -12,7 +12,7 @@
 
 img {
   max-width: 1080px;
-  margin: auto;
+  margin: 20px;
 }
 
 body {
@@ -35,13 +35,13 @@ header label {
   display: none;
 }
 
-header nav {
+/*header nav {
   display: none;
-}
+}*/
 
-header input:checked ~ nav {
+/*header input:checked ~ nav {
   display: block;
-}
+}*/
 
 .heading nav a {
   display: block;
@@ -54,6 +54,37 @@ header input:checked ~ nav {
   font-weight: bold;
 }
 
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background-color: black;
+  color: #FFFFFF;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  }
+nav ul li:hover ul {
+  display: block;
+}
 @media (min-width: 500px) {
 
   header label {
