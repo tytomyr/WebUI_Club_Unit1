@@ -10,6 +10,11 @@
   margin: 0;
 }
 
+img {
+  max-width: 1080px;
+  margin: auto;
+}
+
 body {
   max-width: 1080px;
   margin: auto;
