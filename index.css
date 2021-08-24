@@ -10,6 +10,45 @@
   margin: 0;
 }
 
+@media (min-width: 500px) {
+
+  header label {
+    display: none;
+  }
+
+  .heading {
+    display: flex;
+  }
+
+  .heading .menu {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+}
+
+@media (min-width: 600px) {
+  .latest-news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+}
+
+@media (min-width: 900px) {
+  .latest-news {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 980px) {
+  .latest-news {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 img {
   max-width: 1080px;
   
