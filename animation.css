@@ -1,85 +1,79 @@
 
 :root {
-    font-family: sans-serif;
-    --main-color: #000000;
-    }
-  
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  span img {
-    max-width: 150px;
-    margin: 40px;
-    justify-content: space-around;
-  }
-  .rotation_01{
-      transition: transform 1s;
-  }
-  .rotation_01:hover{
-      transform: rotate(360deg) translateZ(0);
-  }
-
-  .rotation_02:hover{
-      -webkit-animation: spin 1s linear infinite;
-      -moz-animation: spin 1s linear infinite;
-      animation: spin 1s linear infinite;
-  }
-  .rotation_03 {
-    -webkit-animation: spin 5s linear infinite;
-    -moz-animation: spin 5s linear infinite;
-    animation: spin 5s linear infinite;
-  }
+  font-family: sans-serif;
+  --main-color: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+span img {
+  max-width: 150px;
+  margin: 40px;
+  justify-content: space-around;
+}
+.rotation_01{
+  transition: transform 1s;
+}
+.rotation_01:hover{
+  transform: rotate(360deg) translateZ(0);
+}
+.rotation_02:hover{
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+.rotation_03 {
+  -webkit-animation: spin 5s linear infinite;
+  -moz-animation: spin 5s linear infinite;
+  animation: spin 5s linear infinite;
+}
 @-webkit-keyframes spin {
-    100%{-webkit-transform: rotate(360deg);}
+  100%{
+     -webkit-transform: rotate(360deg);
+ }
 }
 @-moz-keyframes spin {
-    100%{-webkit-transform: rotate(360deg);}
+  100%{
+     -webkit-transform: rotate(360deg);
+ }
 }
-
 @keyframes spin {
-    100%{-webkit-transform: rotate(360deg);}
+  100%{
+     -webkit-transform: rotate(360deg);
+ }
+}
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+.heading .logo, header .banner h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+header label {
+  font-size: 3.5rem;
+}
+#burger-checkbox {
+  display: none;
+}
+header nav {
+  display: none;
+}
+header input:checked ~ nav {
+  display: block;
+}
+.heading nav a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.heading nav a:hover {
+  font-weight: bold;
 }
 
-  body {
-    max-width: 1080px;
-    margin: auto;
-  }
-  
-  .heading .logo,
-  header .banner h1 {
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  header label {
-    font-size: 3.5rem;
-  }
-  
-  #burger-checkbox {
-    display: none;
-  }
-  
-  header nav {
-    display: none;
-  }
-  
-  header input:checked ~ nav {
-    display: block;
-  }
-  
-  .heading nav a {
-    display: block;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--main-color);
-  }
-  
-  .heading nav a:hover {
-    font-weight: bold;
-  }
   
   
   

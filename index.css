@@ -3,171 +3,133 @@
 :root {
   font-family: sans-serif;
   --main-color: #000000;
-  }
-
+}
 * {
   padding: 0;
   margin: 0;
 }
-
 @media (min-width: 500px) {
-
   header label {
-    display: none;
-  }
-
+      display: none;
+ }
   .heading {
-    display: flex;
-  }
-
+      display: flex;
+ }
   .heading .menu {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-  }
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+ }
   img {
-    max-width: 100%;
-    
-  }
+      max-width: 100%;
+ }
 }
-
 @media (min-width: 600px) {
   .latest-news {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-    
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+ }
   img {
-    max-width: 100%;
-    
-  }
+      max-width: 100%;
+ }
 }
-
 @media (min-width: 900px) {
   .latest-news {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+      grid-template-columns: 1fr 1fr 1fr;
+ }
   img {
-    max-width: 100%;
-    
-  }
+      max-width: 100%;
+ }
 }
-
 @media (min-width: 980px) {
   .latest-news {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
   img {
-    max-width: 100%;
-    
-  }
+      max-width: 100%;
+ }
 }
-
 img {
   max-width: 100%;
-  
 }
-
 article img {
   max-width: 200px;
   align-items: center;
   margin: auto;
 }
-
 body {
   max-width: 1080px;
   margin: auto;
 }
-
-.heading .logo,
-header .banner h1 {
+.heading .logo, header .banner h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
   text-align: center;
 }
-
 header label {
   font-size: 3.5rem;
 }
-
 #burger-checkbox {
   display: none;
 }
-
 header nav {
   display: none;
 }
-
 header input:checked ~ nav {
   display: block;
 }
-
 .heading nav a {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--main-color);
 }
-
 .heading nav a:hover {
   font-weight: bold;
 }
-
 nav ul {
   list-style: none;
 }
-
 nav ul li {
   float: left;
 }
-
 nav ul::after {
   content: "";
   display:inline ;
   clear: both;
 }
-
 nav ul li a {
   display: inline-block;
   padding: 10px 20px;
 }
-
 nav ul li a:hover {
   background-color: black;
   color: #FFFFFF;
-  
 }
-
 nav ul ul {
   display: none;
   position: absolute;
-  }
+}
 nav ul li:hover ul {
   display: block;
 }
 @media (min-width: 500px) {
-
   header label {
-    display: none;
-  }
-
+      display: none;
+ }
   .heading {
-    display: flex;
-  }
-
+      display: flex;
+ }
   .heading .menu {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-  }
-
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+ }
 }
-
 header .banner {
-  
   background-position: center;
   background-size: cover;
   min-height: 400px;
@@ -176,54 +138,41 @@ header .banner {
   justify-content: center;
   flex-direction: column;
 }
-
 header .banner h1 {
   color: var(--accent-color);
 }
-
-
-
 .latest-news article {
   border: 1px solid var(--main-color);
 }
-
 .latest-news article img {
   display: block;
-  width: 100%; 
+  width: 100%;
 }
-
 .larest-news article div {
   display: flex;
   justify-content: space-around;
 }
-
 @media (min-width: 600px) {
   .latest-news {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5px;
-  }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+ }
 }
-
 @media (min-width: 900px) {
   .latest-news {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+      grid-template-columns: 1fr 1fr 1fr;
+ }
 }
-
 @media (min-width: 980px) {
   .latest-news {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
 }
-
 footer form label {
   width: 80px;
 }
-
-
 /* Controls */
-
 .button {
   padding: 0.35em 1.2em;
   border: 0.1em solid #FFFFFF;
@@ -235,18 +184,212 @@ footer form label {
   transition: color 0.7s;
   background-color: transparent;
 }
-
 .button:hover {
   color: #000000;
   background-color: #FFFFFF;
   cursor: pointer;
 }
-
 .card-button {
   border-color: black;
   color: black;
 }
-
+.card-button:hover {
+  background-color: black;
+  color: white;
+}
+:root {
+  font-family: sans-serif;
+  --main-color: #000000;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+@media (min-width: 500px) {
+  header label {
+      display: none;
+ }
+  .heading {
+      display: flex;
+ }
+  .heading .menu {
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+ }
+  img {
+      max-width: 100%;
+ }
+}
+@media (min-width: 600px) {
+  .latest-news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+ }
+  img {
+      max-width: 100%;
+ }
+}
+@media (min-width: 900px) {
+  .latest-news {
+      grid-template-columns: 1fr 1fr 1fr;
+ }
+  img {
+      max-width: 100%;
+ }
+}
+@media (min-width: 980px) {
+  .latest-news {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+  img {
+      max-width: 100%;
+ }
+}
+img {
+  max-width: 100%;
+}
+article img {
+  max-width: 200px;
+  align-items: center;
+  margin: auto;
+}
+body {
+  max-width: 1080px;
+  margin: auto;
+}
+.heading .logo, header .banner h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+header label {
+  font-size: 3.5rem;
+}
+#burger-checkbox {
+  display: none;
+}
+header nav {
+  display: none;
+}
+header input:checked ~ nav {
+  display: block;
+}
+.heading nav a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.heading nav a:hover {
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  float: left;
+}
+nav ul::after {
+  content: "";
+  display:inline ;
+  clear: both;
+}
+nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a:hover {
+  background-color: black;
+  color: #FFFFFF;
+}
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+nav ul li:hover ul {
+  display: block;
+}
+@media (min-width: 500px) {
+  header label {
+      display: none;
+ }
+  .heading {
+      display: flex;
+ }
+  .heading .menu {
+      display: flex;
+      flex: 1;
+      justify-content: space-around;
+      align-items: center;
+ }
+}
+header .banner {
+  background-position: center;
+  background-size: cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+header .banner h1 {
+  color: var(--accent-color);
+}
+.latest-news article {
+  border: 1px solid var(--main-color);
+}
+.latest-news article img {
+  display: block;
+  width: 100%;
+}
+.larest-news article div {
+  display: flex;
+  justify-content: space-around;
+}
+@media (min-width: 600px) {
+  .latest-news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+ }
+}
+@media (min-width: 900px) {
+  .latest-news {
+      grid-template-columns: 1fr 1fr 1fr;
+ }
+}
+@media (min-width: 980px) {
+  .latest-news {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+ }
+}
+footer form label {
+  width: 80px;
+}
+/* Controls */
+.button {
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  transition: color 0.7s;
+  background-color: transparent;
+}
+.button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
+  cursor: pointer;
+}
+.card-button {
+  border-color: black;
+  color: black;
+}
 .card-button:hover {
   background-color: black;
   color: white;
