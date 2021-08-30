@@ -32,8 +32,10 @@
             <h3 id="message1"></h3>
             <h3 id="message2"></h3>
             <script>
-               document.getElementById("myButton").addEventListener('mouseover',runEvent1);     document.getElementById("myButton").addEventListener('mouseout',runEvent2);
-    document.getElementById("box").addEventListener('mouseenter',runEvent3);     document.getElementById("box").addEventListener('mouseleave',runEvent4);
+    document.getElementById("myButton").addEventListener('mouseover',runEvent1);
+    document.getElementById("myButton").addEventListener('mouseout',runEvent2);
+    document.getElementById("box").addEventListener('mouseenter',runEvent3);
+    document.getElementById("box").addEventListener('mouseleave',runEvent4);
     document.getElementById("myButton").addEventListener('click',runEvent5);
     function runEvent1(){
     document.getElementById("myButton").innerHTML = "mouse is over me";
@@ -61,30 +63,61 @@
     document.getElementById("message2").innerHTML = "button clicked";
     }
     </script>
+    <br>
      </div>
-     <br><br>
-     <div class="List">
-        <ul id="myList" >
-           <li id="one">User1</li>
-           <li id="two">User2</li>
-           <li id="three">User3</li>
-           <li id="four">User4</li>
-           <li id="five">User5</li>
-        </ul>
+     <br>
+     <div>
+      <ul id="list">
+         <li id="one">User1</li>
+         <li id="two">User2</li>
+         <li id="three">User3</li>
+         <li id= "four">User4</li>
+         <li id= "five">User5</li>
+      </ul>
+      <br>
         <button onclick="runEvent()">Chanhe order</button>
+        <br>
+        <br>
+        <p id="output">Output result: </p>
  <script>
-   var myList = document.getElementById("myList")
-   var one = document.getElementById("one");
-   var two = document.getElementById("two");
-   var three = document.getElementById("three");
-   var four = document.getElementById("four");
-   var five = document.getElementById("five");
-   //document.getElementById("messButton").addEventListener('click',runEvent);
-function runEvent(){
-myList.replaceChild (five , two);
-myList.replaceChild (two , three);
-}
+   const myElement = document.getElementById("list");
+   const one = document.getElementById("one").textContent;
+   const two = document.getElementById("two").textContent;
+   const three = document.getElementById("three").textContent;
+   const four = document.getElementById("four").textContent;
+   const five = document.getElementById("five").textContent;
+    function runEvent(){
+     document.getElementById("output").innerHTML = "Output result:" + one +" "+ five +" "+ two +" "+ four +" "+ three ;
+    }
+   //  function runEvent(){
+   //     document.getElementById("output").innetHTML = "Output result:" + myElement.children[0].textContent
+   //  }
+  
 </script>
      </div>
+     <br><hr><br>
+     <h3>Fan's Sppeals</h3>
+     <div id="appeals" style="margin: 10px; height: 200px; display: block; border: 1px solid black">
+     <p id="newAppeal" style="margin: 10px;"> new appeal</p>
+     </div>
+     <div id="addAppeal" style="margin: 10px; display: block;">
+         <Label style="display: block;">
+           Enter your appeal
+        </Label>
+        <form method="GET" action="index.php"  target="_blank">
+         <label>
+          <input  style=" width: 400px; height: 200px; border: 1px solid black" type="text" placeholder="Your name" name="user-name">
+         </label>
+         <input onclick="func()" style="display: block; margin: 10px;" type="submit">
+     </form>
+   </div>
+        <br><br>
+        <script>
+function func(){
+   let newAppeal = document.createElement("p")
+   const date = new Date();
+   document.getElementById("newAppeal").innerHTML = newAppeal + "\n"+ date;
+}
+        </script>   
    </body>
 </html>
