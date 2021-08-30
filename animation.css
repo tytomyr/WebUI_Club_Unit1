@@ -7,6 +7,16 @@
   padding: 0;
   margin: 0;
 }
+
+#box {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  position: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+}
 span img {
   max-width: 150px;
   margin: 40px;
