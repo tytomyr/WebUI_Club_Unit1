@@ -61,6 +61,30 @@
     document.getElementById("message2").innerHTML = "button clicked";
     }
     </script>
-         </div>
+     </div>
+     <br><br>
+     <div class="List">
+        <ul id="myList" >
+           <li id="one">User1</li>
+           <li id="two">User2</li>
+           <li id="three">User3</li>
+           <li id="four">User4</li>
+           <li id="five">User5</li>
+        </ul>
+        <button onclick="runEvent()">Chanhe order</button>
+ <script>
+   var myList = document.getElementById("myList")
+   var one = document.getElementById("one");
+   var two = document.getElementById("two");
+   var three = document.getElementById("three");
+   var four = document.getElementById("four");
+   var five = document.getElementById("five");
+   //document.getElementById("messButton").addEventListener('click',runEvent);
+function runEvent(){
+myList.replaceChild (five , two);
+myList.replaceChild (two , three);
+}
+</script>
+     </div>
    </body>
 </html>
