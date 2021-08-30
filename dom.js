@@ -1,9 +1,6 @@
-/*var box = document.getElementById('box');
-box.addEventListener('mousemove',runEvent);
-//box.addEventListener('mouseover',runEvent);
-let e;
-function runEvent(e){
-console.log('EVENT TYPE: '+  e.type);
+//document.getElementById("box").addEventListener('mouseover',runEvent);
+//function runEvent(){
+//document.getElementById("myButton").innerHTML = "mouseIn";
 
-}*/
+//}
 //console.dir(document);

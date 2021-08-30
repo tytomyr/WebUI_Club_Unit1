@@ -18,9 +18,7 @@
             </nav>
          <div class="logo">Magnus Carlsen</div>
          </div>
-         <br><br> <div id="box">
-            <button>Live button</Button></button>
-         </div>
+         
          <span class="banner">
          <img class="rotation_01" src="img/king.svg" alt="king">
          <img class="rotation_02" src="img/bishop.svg" alt="bishop">
@@ -28,6 +26,41 @@
          <img class="rotation_01" src="img/queen.svg" alt="queen">
          </span>
       </header>
-      
+      <br><br> <div id="box" style=" width: 400px;
+         height: 200px;  border: 1px solid black">
+            <button id="myButton">Live button</Button></button>
+            <h3 id="message1"></h3>
+            <h3 id="message2"></h3>
+            <script>
+               document.getElementById("myButton").addEventListener('mouseover',runEvent1);     document.getElementById("myButton").addEventListener('mouseout',runEvent2);
+    document.getElementById("box").addEventListener('mouseenter',runEvent3);     document.getElementById("box").addEventListener('mouseleave',runEvent4);
+    document.getElementById("myButton").addEventListener('click',runEvent5);
+    function runEvent1(){
+    document.getElementById("myButton").innerHTML = "mouse is over me";
+    document.getElementById("message2").innerHTML = "mouse is on the button";
+    }
+    function runEvent2(){
+    document.getElementById("myButton").innerHTML = "click me";
+    document.getElementById("message2").innerHTML = "mouse is not on the button";
+    }
+    function runEvent3(){
+    document.getElementById("myButton").innerHTML = "click me";
+    document.getElementById("message1").innerHTML = "mouse is in the box";
+    document.getElementById("message2").innerHTML = "mouse is not on the button";
+    }
+    
+    function runEvent4(){
+    document.getElementById("myButton").innerHTML = "click me";
+    document.getElementById("message1").innerHTML = "mouse is not in the box";
+    document.getElementById("message2").innerHTML = "button not clicked";
+    }
+    
+    function runEvent5(){
+    document.getElementById("myButton").innerHTML = "i am clicked";
+    document.getElementById("message1").innerHTML = "mouse is the box";
+    document.getElementById("message2").innerHTML = "button clicked";
+    }
+    </script>
+         </div>
    </body>
 </html>
